@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AddComponents';
+  display_img = "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
 }
