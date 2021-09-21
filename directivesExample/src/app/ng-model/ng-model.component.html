@@ -1,0 +1,13 @@
+<div class="jumbotron">
+<div class="input-group flex-nowrap">
+    <span class="input-group-text" id="addon-wrapping">@</span>
+    <!-- ng model stores box value at module.ts -->
+    <input [(ngModel)]="abc"  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+    <input type="submit" (click)="callme()" class="btn btn-light">
+  
+  </div>
+  <br>
+  <input [(ngModel)]="flag" type="checkbox">
+  &nbsp;
+  <input [disabled]="!flag" type="submit" class="btn btn-outline-success">
+</div>
