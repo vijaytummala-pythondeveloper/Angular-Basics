@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <div class="input-group flex-nowrap">
+        <!-- ng model stores box value at module.ts -->
+        <input [(ngModel)]="number"  type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        <br>
+        
+   
+    </div>
+    <div *ngIf="number">
+    <p *ngIf="number%2==0;else oddtag">even</p>
+    
+    <ng-template #oddtag><p >odd</p></ng-template>
+</div>
+</div>
